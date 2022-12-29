@@ -11,7 +11,7 @@ const ForumLayout = () => {
         <div>
             <Navbar></Navbar>
             <ForumHero></ForumHero>
-            <div className='forum w-11/12 mx-auto my-10'>
+            <div className='forum w-11/12 mx-auto my-5'>
                 <SideBar></SideBar>
                 <Outlet></Outlet>
             </div>

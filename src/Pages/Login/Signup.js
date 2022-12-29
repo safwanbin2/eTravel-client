@@ -36,7 +36,7 @@ const Signup = () => {
                 toast.success('Created & Logged In')
                 const newUser = {
                     email: user.email,
-                    name: user.name
+                    name: user.displayName
                 }
                 saveUser(newUser);
             })
