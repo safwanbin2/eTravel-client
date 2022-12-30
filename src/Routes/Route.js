@@ -7,6 +7,8 @@ import MyPosts from "../Pages/Forum/MyPosts";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import Signup from "../Pages/Login/Signup";
+import TravelAdvice from "../Pages/TravelAdvice/TravelAdvice";
+import PrivateRoute from "./PrivateRoute";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -26,12 +28,16 @@ export const router = createBrowserRouter([
             {
                 path: "/login",
                 element: <Login></Login>
+            },
+            {
+                path: "/travelAdvice",
+                element: <TravelAdvice></TravelAdvice>
             }
         ]
     },
     {
         path: "/forum",
-        element: <ForumLayout></ForumLayout>,
+        element: <PrivateRoute><ForumLayout></ForumLayout></PrivateRoute>,
         children: [
             {
                 path: "/forum",

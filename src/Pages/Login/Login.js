@@ -1,12 +1,15 @@
 import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-hot-toast';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider';
 
 const Login = () => {
     const { logIn, logInWithGoogle } = useContext(AuthContext);
     const { register, handleSubmit, formState: { errors } } = useForm();
+    const location = useLocation();
+    const navigate = useNavigate();
+    const from = location.state?.from?.pathname || '/';
 
     const handleLogIn = data => {
         logIn(data.email, data.password)
@@ -30,7 +33,6 @@ const Login = () => {
         logInWithGoogle()
             .then(result => {
                 const user = result.user;
-                console.log(user);
                 toast.success('Created & Logged In')
                 const newUser = {
                     email: user.email,
@@ -54,8 +56,8 @@ const Login = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 getJWT(newUser.email)
+                navigate(from, { replace: true });
             })
             .catch(error => {
                 console.error(error)
@@ -67,7 +69,6 @@ const Login = () => {
             fetch(`http://localhost:5000/jwt/${email}`)
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data)
                     localStorage.setItem('eTravel-token', data.accessToken)
                 })
                 .catch(error => {

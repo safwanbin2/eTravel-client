@@ -35,7 +35,7 @@ const CreatePost = () => {
                     postTitle: data.title,
                     postCategory: data.category,
                     postBody: data.postBody,
-                    postdate: postDate,
+                    postDate: postDate,
                     likes: 0
                 }
                 fetch(`http://localhost:5000/posts`, {
