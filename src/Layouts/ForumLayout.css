@@ -2,3 +2,9 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
+
+@media screen and (max-width: 676px) {
+    .forum{
+        grid-template-columns: 1fr;
+    }
+}

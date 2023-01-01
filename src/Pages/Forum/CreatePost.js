@@ -38,7 +38,7 @@ const CreatePost = () => {
                     postDate: postDate,
                     likes: 0
                 }
-                fetch(`http://localhost:5000/posts`, {
+                fetch(`https://e-travel-server.vercel.app/posts`, {
                     method: "POST",
                     headers: {
                         "content-type": "application/json"
@@ -69,7 +69,7 @@ const CreatePost = () => {
     const { data: categories, isLoading } = useQuery({
         queryKey: ['categories'],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/categories`);
+            const res = await fetch(`https://e-travel-server.vercel.app/categories`);
             const data = await res.json();
             return data;
         }

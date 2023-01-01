@@ -59,7 +59,7 @@ export const router = createBrowserRouter([
             {
                 path: "/forum/category/:title",
                 element: <CategoryPosts></CategoryPosts>,
-                loader: ({ params }) => fetch(`http://localhost:5000/categoryposts/${params.title}`)
+                loader: ({ params }) => fetch(`https://e-travel-server.vercel.app/categoryposts/${params.title}`)
             }
         ]
     }

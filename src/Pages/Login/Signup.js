@@ -53,7 +53,7 @@ const Signup = () => {
     }
 
     const saveUser = newUser => {
-        fetch(`http://localhost:5000/users`, {
+        fetch(`https://e-travel-server.vercel.app/users`, {
             method: "POST",
             headers: {
                 "content-type": "application/json"
@@ -72,7 +72,7 @@ const Signup = () => {
 
     const getJWT = email => {
         if (email) {
-            fetch(`http://localhost:5000/jwt/${email}`)
+            fetch(`https://e-travel-server.vercel.app/jwt/${email}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log(data)

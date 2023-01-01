@@ -9,7 +9,7 @@ const MyPosts = () => {
     const { data: posts, isLoading } = useQuery({
         queryKey: ['posts', user?.email],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/posts/${user?.email}`)
+            const res = await fetch(`https://e-travel-server.vercel.app/posts/${user?.email}`)
             const data = await res.json()
             return data;
         }
