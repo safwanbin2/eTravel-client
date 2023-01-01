@@ -5,7 +5,7 @@ import CategoryPosts from "../Pages/Forum/CategoryPosts";
 import CreatePost from "../Pages/Forum/CreatePost";
 import Forum from "../Pages/Forum/Forum";
 import MyPosts from "../Pages/Forum/MyPosts";
-import HireGuide from "../Pages/HireGuide/HireGuide";
+// import HireGuide from "../Pages/HireGuide/HireGuide";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import Signup from "../Pages/Login/Signup";
@@ -34,10 +34,10 @@ export const router = createBrowserRouter([
                 path: "/contact",
                 element: <PrivateRoute><Contact></Contact></PrivateRoute>
             },
-            {
-                path: "/hireGuide",
-                element: <PrivateRoute><HireGuide></HireGuide></PrivateRoute>
-            }
+            // {
+            //     path: "/hireGuide",
+            //     element: <PrivateRoute><HireGuide></HireGuide></PrivateRoute>
+            // }
         ]
     },
     {

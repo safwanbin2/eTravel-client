@@ -1,0 +1,34 @@
+[
+    {
+        "guideName": "Majed Mia",
+        "guideEmail": "majed@gmail.com",
+        "guidePhone": "0183348374",
+        "guideImg": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fHBlcnNvbnxlbnwwfHwwfHw%3D&w=1000&q=80",
+        "area": "chattogram",
+        "price": 15
+    },
+    {
+        "guideName": "Mahi Mia",
+        "guideEmail": "mahi@gmail.com",
+        "guidePhone": "0170348374",
+        "guideImg": "https://img.freepik.com/free-photo/portrait-dark-skinned-cheerful-woman-with-curly-hair-touches-chin-gently-laughs-happily-enjoys-day-off-feels-happy-enthusiastic-hears-something-positive-wears-casual-blue-turtleneck_273609-43443.jpg?w=2000",
+        "area": "dhaka",
+        "price": 20
+    },
+    {
+        "guideName": "Sami Mia",
+        "guideEmail": "sami@gmail.com",
+        "guidePhone": "0183398374",
+        "guideImg": "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+        "area": "barisal",
+        "price": 10
+    },
+    {
+        "guideName": "mia Mia",
+        "guideEmail": "mia@gmail.com",
+        "guidePhone": "0183348374",
+        "guideImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr3qBVX4XIA8zq3LpBn64zAuOt9_IZ7_H5uA&usqp=CAU",
+        "area": "noakhali",
+        "price": 5
+    }
+]
